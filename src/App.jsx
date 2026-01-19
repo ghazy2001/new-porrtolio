@@ -7,9 +7,12 @@ import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
+import LoadingScreen from "./components/LoadingScreen";
+
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
+    <main className="container mx-auto max-w-7xl">
+      <LoadingScreen />
       <Navbar />
       <Hero />
       <About />
@@ -18,7 +21,7 @@ const App = () => {
       <Testimonial />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 };
 
