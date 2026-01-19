@@ -20,6 +20,14 @@ const InteractiveAstronautScene = () => {
   // Voice Synthesis Reference
   const synth = window.speechSynthesis;
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Load voices
   useEffect(() => {
     const loadVoices = () => {
@@ -178,8 +186,8 @@ const InteractiveAstronautScene = () => {
 
           {/* The Astronaut Agent */}
           <Astronaut
-            scale={0.4}
-            position={[2, -1, 0]}
+            scale={isMobile ? 0.25 : 0.4}
+            position={isMobile ? [0, -1.5, 0] : [2, -1, 0]}
             rotation={[0, -0.5, 0]}
             onClick={handleAstronautClick}
             onPointerOver={() => (document.body.style.cursor = "pointer")}
