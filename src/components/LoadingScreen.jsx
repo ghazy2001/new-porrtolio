@@ -1,8 +1,8 @@
 import { useProgress } from "@react-three/drei";
 import { useEffect, useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 const LoadingScreen = ({ onStarted }) => {
-  // eslint-disable-next-line react/prop-types
   const { active, progress } = useProgress();
   const [show, setShow] = useState(true);
 
