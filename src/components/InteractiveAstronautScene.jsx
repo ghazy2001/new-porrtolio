@@ -168,6 +168,8 @@ const InteractiveAstronautScene = () => {
     speak(response);
   };
 
+  if (isMobile) return null;
+
   return (
     <section className="relative w-full h-screen">
       <Canvas camera={{ position: [0, 0, 8], fov: 45 }} shadows dpr={[1, 2]}>
