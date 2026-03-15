@@ -239,6 +239,27 @@ export const myProjects = [
       { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
     ],
   },
+  {
+    id: 14,
+    title: "STORIA | E-COMMERCE ECOSYSTEM",
+    description:
+      "A high-performance Full-Stack e-commerce platform for a premium Abaya brand, seamlessly integrated with the Salla ecosystem for streamlined operations.",
+    subDescription: [
+      "Architected a custom MERN-stack infrastructure to bridge personalized brand aesthetics with Salla’s e-commerce API, ensuring real-time data synchronization.",
+      "Developed a sophisticated, mobile-first UI using React and Tailwind CSS, focused on high-end fashion presentation and intuitive user flows.",
+      "Engineered a robust Node.js/Express backend to handle custom business logic, secure API communication, and automated order processing.",
+      "Optimized site performance and SEO-readiness to handle high traffic volumes while maintaining smooth, buttery animations for a premium feel.",
+      "Integrated scalable database management with MongoDB to track custom user interactions and enhance the store's marketing capabilities.",
+    ],
+    href: "https://storiasa.com/",
+    image: "/assets/projects/project14.PNG",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+    ],
+  },
 ];
 
 export const mySocials = [

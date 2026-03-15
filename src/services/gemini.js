@@ -3,7 +3,11 @@
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY?.trim();
 
 export const chatWithGemini = async (prompt) => {
-  if (!API_KEY || API_KEY.includes("YOUR_GEMINI_API_KEY")) {
+  if (
+    !API_KEY ||
+    API_KEY.includes("YOUR_GEMINI_API_KEY") ||
+    API_KEY.includes("PLACE_YOUR_NEW_KEY_HERE")
+  ) {
     console.warn("Gemini API Key missing or invalid! Returning mock response.");
     return "I am ready to help, Mahmoud! (Please paste your valid API Key in the .env file to enable my brain).";
   }
