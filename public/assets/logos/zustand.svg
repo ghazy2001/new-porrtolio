@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <g fill="none" fill-rule="evenodd">
+    <!-- Bear Head & Ears -->
+    <path fill="#443E38" d="M128 32c-55.228 0-100 38.643-100 86.31 0 22.84 10.288 43.666 27.272 59.108C53.792 195.962 56 216 56 216s21.71-.97 38.835-9.332C105.748 209.68 116.63 211 128 211c55.228 0 100-38.643 100-86.31 0-47.667-44.772-86.31-100-86.31z"/>
+    <!-- Left Ear -->
+    <circle cx="56" cy="64" r="32" fill="#443E38"/>
+    <circle cx="56" cy="64" r="18" fill="#E8B595"/>
+    <!-- Right Ear -->
+    <circle cx="200" cy="64" r="32" fill="#443E38"/>
+    <circle cx="200" cy="64" r="18" fill="#E8B595"/>
+    <!-- Eyes -->
+    <ellipse cx="92" cy="116" rx="9" ry="12" fill="#FFFFFF"/>
+    <circle cx="92" cy="116" r="6" fill="#1E1E1E"/>
+    <circle cx="90" cy="113" r="2" fill="#FFFFFF"/>
+    <ellipse cx="164" cy="116" rx="9" ry="12" fill="#FFFFFF"/>
+    <circle cx="164" cy="116" r="6" fill="#1E1E1E"/>
+    <circle cx="162" cy="113" r="2" fill="#FFFFFF"/>
+    <!-- Muzzle / Snout -->
+    <ellipse cx="128" cy="148" rx="34" ry="26" fill="#E8B595"/>
+    <!-- Nose -->
+    <ellipse cx="128" cy="136" rx="14" ry="9" fill="#1E1E1E"/>
+    <!-- Mouth -->
+    <path stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" d="M128 145v8m-10 0c0 5 4.477 9 10 9s10-4 10-9"/>
+    <!-- Cheeks -->
+    <circle cx="72" cy="138" r="8" fill="#E87A7A" opacity="0.6"/>
+    <circle cx="184" cy="138" r="8" fill="#E87A7A" opacity="0.6"/>
+  </g>
+</svg>

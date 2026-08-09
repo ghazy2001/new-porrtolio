@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import process from "process";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,8 +21,6 @@ if (!API_KEY) {
   console.error("API Key not found in .env file.");
   process.exit(1);
 }
-
-const genAI = new GoogleGenerativeAI(API_KEY);
 
 async function listModels() {
   try {

@@ -1,5 +1,28 @@
 export const myProjects = [
   {
+    id: 15,
+    title: "TAMAYOZ | ENTERPRISE ERP PLATFORM",
+    description:
+      "A modern, high-performance enterprise SPA client for Odoo ERP systems, replacing legacy web interfaces with dynamic multi-view rendering and real-time collaboration.",
+    subDescription: [
+      "Architected a modern Single Page Application (SPA) frontend that deeply integrates with Odoo ERP backend using custom REST APIs and JSON-RPC protocols.",
+      "Developed a dynamic multi-view rendering engine capable of parsing backend view architectures to generate dynamic Form Views, Editable Lists, Kanban Boards, Gantt Charts, and Calendars.",
+      "Engineered real-time collaboration and productivity workflows including live Chatter messaging, activity logs, multi-step wizards, and an advanced dialog orchestrator.",
+      "Configured reverse proxy architecture (via Vercel & Nginx) with secure credential management to resolve cross-domain session cookies and CORS restrictions.",
+      "Implemented scalable state management using Zustand and interactive analytical dashboards with Recharts and Framer Motion, fully optimized for multi-language enterprise workflows.",
+    ],
+    href: "https://tamayoz.crevisoft.com/",
+    image: "/assets/projects/tamayoz.png",
+    tags: [
+      { id: 1, name: "React 19", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Tailwind CSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 3, name: "Zustand", path: "/assets/logos/zustand.svg" },
+      { id: 4, name: "Odoo ERP", path: "/assets/logos/odoo.png" },
+      { id: 5, name: "Vite", path: "/assets/logos/vitejs.svg" },
+      { id: 6, name: "Axios", path: "/assets/logos/axios.png" },
+    ],
+  },
+  {
     id: 14,
     title: "STORIA | E-COMMERCE ECOSYSTEM",
     description:
@@ -307,6 +330,7 @@ export const experiences = [
     date: "2024 - Present",
     contents: [
       "The Tech Comeback: Decided to pivot back to my true passion, dedicating myself to mastering the modern Frontend ecosystem and React 19.",
+      "Enterprise ERP Mastery: Engineered 'Tamayoz', a comprehensive enterprise frontend platform for Odoo ERP, mastering complex dynamic view rendering, XML architecture parsing, and secure session proxying.",
       "MERN Milestone: Recently completed my first official full-stack project using the MERN stack, leveraging AI-assisted workflows to bridge the gap between UI/UX design and backend logic.",
       "Immersive Experiences: Focusing on high-performance interfaces using Three.js and React Three Fiber (R3F) to create cinematic web experiences.",
       "Continuous Evolution: Combining years of business management and accounting logic with cutting-edge web technologies to deliver robust, user-centric solutions.",
