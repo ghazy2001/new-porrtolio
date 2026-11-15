@@ -15,7 +15,7 @@ const HeroText = () => {
   };
 
   return (
-    <div className="z-10 flex flex-col justify-center items-center text-center max-w-5xl w-full mx-auto px-4">
+    <div className="z-10 flex flex-col justify-center items-center text-center max-w-6xl w-full mx-auto px-4">
       {/* Main Headline */}
       <motion.h1
         className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-tight w-full"
@@ -25,7 +25,7 @@ const HeroText = () => {
         transition={{ delay: 0.3 }}
       >
         <span className="inline-block whitespace-nowrap">Senior Frontend / Full&#8209;Stack</span>
-        <span className="block mt-2 h-[1.3em] overflow-hidden">
+        <span className="block mt-2 sm:mt-3">
           <TextRotator words={words} duration={3200} />
         </span>
       </motion.h1>

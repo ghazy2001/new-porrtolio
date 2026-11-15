@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
     >
       <ParallaxBackground />
-      <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center justify-center">
+      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center justify-center">
         <HeroText />
       </div>
     </section>

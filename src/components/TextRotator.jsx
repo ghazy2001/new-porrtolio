@@ -6,8 +6,8 @@ export const TextRotator = ({
   words = [
     "Enterprise ERP & FinTech",
     "Scalable B2B SaaS Systems",
-    "React 19 & Next.js Platforms",
-    "Odoo & Salla Integrations",
+    "Core Open-Source Contributor",
+    "React 19 & Full-Stack Web",
   ],
   duration = 3200,
 }) => {
@@ -21,7 +21,7 @@ export const TextRotator = ({
   }, [words.length, duration]);
 
   return (
-    <span className="relative flex items-center justify-center overflow-hidden h-[1.25em] w-full px-2 py-1 align-middle">
+    <span className="relative flex items-center justify-center overflow-hidden h-[1.35em] w-full px-6 align-middle">
       <AnimatePresence mode="popLayout" initial={false}>
         <motion.span
           key={words[index]}
@@ -32,7 +32,7 @@ export const TextRotator = ({
             duration: 0.45,
             ease: [0.16, 1, 0.3, 1], // Apple / Linear smooth cubic bezier
           }}
-          className="text-shimmer font-black tracking-tight drop-shadow-[0_0_35px_rgba(129,140,248,0.4)] whitespace-nowrap text-center"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-shimmer font-black tracking-tight drop-shadow-[0_0_35px_rgba(129,140,248,0.4)] whitespace-nowrap text-center"
         >
           {words[index]}
         </motion.span>
