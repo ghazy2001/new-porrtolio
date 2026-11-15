@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 export const TextRotator = ({
   words = [
     "Enterprise ERP & FinTech",
-    "Scalable B2B SaaS Systems",
-    "Core Open-Source Contributor",
-    "React 19 & Full-Stack Web",
+    "Scalable B2B SaaS",
+    "Core OSS Contributor",
+    "React 19 & Full-Stack",
   ],
   duration = 3200,
 }) => {
@@ -21,7 +21,7 @@ export const TextRotator = ({
   }, [words.length, duration]);
 
   return (
-    <span className="relative flex items-center justify-center overflow-hidden h-[1.35em] w-full px-6 align-middle">
+    <span className="relative flex items-center justify-center overflow-hidden h-[1.3em] w-full px-2 sm:px-6 align-middle">
       <AnimatePresence mode="popLayout" initial={false}>
         <motion.span
           key={words[index]}
@@ -32,7 +32,7 @@ export const TextRotator = ({
             duration: 0.45,
             ease: [0.16, 1, 0.3, 1], // Apple / Linear smooth cubic bezier
           }}
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-shimmer font-black tracking-tight drop-shadow-[0_0_35px_rgba(129,140,248,0.4)] whitespace-nowrap text-center"
+          className="text-xl sm:text-3xl md:text-5xl lg:text-6xl text-shimmer font-black tracking-tight drop-shadow-[0_0_35px_rgba(129,140,248,0.4)] whitespace-nowrap text-center"
         >
           {words[index]}
         </motion.span>
