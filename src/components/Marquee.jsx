@@ -13,7 +13,7 @@ export default function Marquee({
     <div
       {...props}
       className={twMerge(
-        `group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)] ${
+        `group flex overflow-hidden w-full max-w-full min-w-0 p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)] ${
           vertical ? "flex-col" : "flex-row"
         }`,
         className,

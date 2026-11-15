@@ -87,7 +87,8 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -95,7 +96,16 @@ body {
   font-family: "Funnel Display", sans-serif;
   color: white;
   max-width: 100%;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: clip;
+  position: relative;
+}
+
+#root {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: clip;
+  position: relative;
 }
 
 .c-space {
