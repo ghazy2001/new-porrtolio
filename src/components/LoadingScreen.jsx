@@ -2,25 +2,50 @@ import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const LoadingScreen = ({ onStarted }) => {
+  const [progress, setProgress] = useState(0);
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShow(false);
-      if (onStarted) onStarted();
-    }, 300);
-    return () => clearTimeout(timer);
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            setShow(false);
+            if (onStarted) onStarted();
+          }, 350);
+          return 100;
+        }
+        return prev + 4;
+      });
+    }, 25);
+
+    return () => clearInterval(interval);
   }, [onStarted]);
 
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-500 opacity-100 pointer-events-none">
-      <div className="text-3xl sm:text-4xl font-extrabold text-white mb-2 tracking-tight">
-        Mahmoud Ghazy
+    <div
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-700 ${
+        progress === 100 ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
+      <div className="text-4xl font-bold text-white mb-4 animate-pulse">
+        Mahmoud GhaZy
       </div>
-      <p className="text-xs font-mono text-emerald-400">
-        Enterprise Frontend Systems
+
+      {/* Progress Bar Container */}
+      <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden relative">
+        {/* Progress Bar Fill */}
+        <div
+          className="h-full bg-blue-500 transition-all duration-100 ease-out"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+
+      <p className="text-gray-400 mt-2 text-sm font-mono">
+        {Math.round(progress)}% loaded
       </p>
     </div>
   );

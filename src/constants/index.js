@@ -44,24 +44,6 @@ export const myProjects = [
     ],
   },
   {
-    id: 16,
-    title: "TREESHIFT | GIT WORKTREE ENGINE",
-    description:
-      "A blazing-fast Git worktree manager and CLI developer tool with interactive TUI, built with TypeScript.",
-    subDescription: [
-      "Engineered a high-performance developer tool that eliminates Git context-switching overhead using isolated worktrees.",
-      "Implemented auto-synchronization and interactive TUI interface in TypeScript for fluid terminal workflows.",
-      "Published as an open-source tool, gaining active developer adoption and community stars.",
-    ],
-    href: "https://github.com/ghazy2001/treeshift",
-    image: "/assets/projects/project13.png",
-    tags: [
-      { id: 1, name: "TypeScript", path: "/assets/logos/javascript.svg" },
-      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.png" },
-      { id: 3, name: "Git CLI", path: "/assets/logos/vitejs.svg" },
-    ],
-  },
-  {
     id: 1,
     title: "MN MARKETING AGENCY",
     description:
@@ -82,6 +64,24 @@ export const myProjects = [
     ],
   },
   {
+    id: 16,
+    title: "TREESHIFT | GIT WORKTREE ENGINE",
+    description:
+      "A blazing-fast Git worktree manager and CLI developer tool with interactive TUI, built with TypeScript.",
+    subDescription: [
+      "Engineered a high-performance developer tool that eliminates Git context-switching overhead using isolated worktrees.",
+      "Implemented auto-synchronization, branch transplanting, and interactive TUI interface in TypeScript for fluid terminal workflows.",
+      "Published as an open-source tool, gaining active developer adoption and community stars.",
+    ],
+    href: "https://github.com/ghazy2001/treeshift",
+    image: "/assets/projects/treeshift.png",
+    tags: [
+      { id: 1, name: "TypeScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.png" },
+      { id: 3, name: "Git CLI", path: "/assets/logos/vitejs.svg" },
+    ],
+  },
+  {
     id: 10,
     title: "IPHONE 15 PRO 3D EXPERIENCE",
     description:
@@ -99,6 +99,78 @@ export const myProjects = [
       { id: 2, name: "Three.js", path: "/assets/logos/threejs.svg" },
       { id: 3, name: "GSAP", path: "/assets/logos/gsap.png" },
       { id: 4, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 6,
+    title: "NEXT.JS ENTERPRISE DASHBOARD",
+    description:
+      "A modern dashboard interface built with Next.js, featuring server-side rendering, real-time analytics, and user role management.",
+    subDescription: [
+      "Built with Next.js App Router for server-side rendering and maximum data retrieval performance.",
+      "Engineered dynamic revenue charts, customer invoices, and financial status metrics.",
+      "Integrated secure authentication and role-based access control.",
+    ],
+    href: "https://nextjs-dashboard-sigma-kohl-wvrahynsgr.vercel.app/dashboard",
+    image: "/assets/projects/project6.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+      { id: 2, name: "React", path: "/assets/logos/react.svg" },
+      { id: 3, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 12,
+    title: "GAME SITE SHOWCASE",
+    description:
+      "An immersive gaming showcase site focusing on high-end motion graphics, smooth transitions, and interactive user experience.",
+    subDescription: [
+      "Orchestrated complex animation timelines and state-driven transitions using GSAP and @gsap/react.",
+      "Developed a highly responsive and performant UI with utility-first Tailwind CSS.",
+      "Focused on creative frontend engineering and micro-interactions.",
+    ],
+    href: "https://game-site-navy.vercel.app/",
+    image: "/assets/projects/project12.png",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "GSAP", path: "/assets/logos/gsap.png" },
+      { id: 3, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 11,
+    title: "AI APP SUITE & PROTOTYPES",
+    description:
+      "An interactive suite of AI-inspired web applications with modular components and fast modern tooling.",
+    subDescription: [
+      "Modern UI design with responsive layouts and accessible components.",
+      "Built with Vite and React for high-speed client performance.",
+      "Modular and extensible code architecture.",
+    ],
+    href: "https://ai-app-portfolio.vercel.app/",
+    image: "/assets/projects/project11.png",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Vite", path: "/assets/logos/vitejs.svg" },
+      { id: 3, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 3,
+    title: "COMMERCIAL ACCESSORIES E-SHOP",
+    description:
+      "A commercial portfolio and e-commerce shop web application featuring single-page navigation and product catalogs.",
+    subDescription: [
+      "Built with React and React Router for seamless single-page navigation.",
+      "Integrated polished Material UI components and responsive product grids.",
+      "Implemented client-side cart logic and product filtering.",
+    ],
+    href: "https://ghazy-accessories.vercel.app/",
+    image: "/assets/projects/project3.png",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 3, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
     ],
   },
 ];
