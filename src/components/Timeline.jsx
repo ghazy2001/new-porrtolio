@@ -26,12 +26,12 @@ export const Timeline = ({ data }) => {
   }, []);
 
   const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start 60%", "end 75%"],
+    target: ref,
+    offset: ["start 25%", "end 45%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 0.65], [0, height], { clamp: true });
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.02], [0, 1]);
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
 
   return (
     <div className="c-space section-spacing" ref={containerRef}>
