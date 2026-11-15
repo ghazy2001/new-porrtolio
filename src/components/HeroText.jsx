@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 const HeroText = () => {
   const words = [
     "Enterprise ERP & FinTech",
-    "Core Open-Source Contributor",
     "Scalable B2B SaaS Systems",
-    "React 19, Next.js & Node.js",
+    "Core Open-Source Contributor",
+    "React 19 & Full-Stack Web",
   ];
 
   const variants = {
@@ -15,17 +15,17 @@ const HeroText = () => {
   };
 
   return (
-    <div className="z-10 flex flex-col justify-center items-center text-center max-w-4xl mx-auto px-4">
+    <div className="z-10 flex flex-col justify-center items-center text-center max-w-5xl w-full mx-auto px-4">
       {/* Main Headline */}
       <motion.h1
-        className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.25]"
+        className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-tight w-full"
         variants={variants}
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.3 }}
       >
-        Senior Frontend / Full-Stack <br />
-        <span className="block mt-1">
+        <span className="inline-block whitespace-nowrap">Senior Frontend / Full&#8209;Stack</span>
+        <span className="block mt-2 h-[1.3em] overflow-hidden">
           <TextRotator words={words} duration={3200} />
         </span>
       </motion.h1>
