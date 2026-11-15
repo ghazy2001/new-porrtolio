@@ -1,0 +1,49 @@
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import PropTypes from "prop-types";
+
+export const TextRotator = ({
+  words = [
+    "Enterprise ERP & FinTech",
+    "Scalable B2B SaaS Systems",
+    "React 19 & Next.js Platforms",
+    "Odoo & Salla Integrations",
+  ],
+  duration = 3200,
+}) => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, duration);
+    return () => clearInterval(interval);
+  }, [words.length, duration]);
+
+  return (
+    <span className="relative inline-flex items-center justify-center overflow-hidden min-h-[1.3em] px-2 py-1 align-middle">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={words[index]}
+          initial={{ y: 35, opacity: 0, filter: "blur(6px)" }}
+          animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
+          exit={{ y: -35, opacity: 0, filter: "blur(6px)" }}
+          transition={{
+            duration: 0.45,
+            ease: [0.16, 1, 0.3, 1], // Apple / Linear smooth cubic bezier
+          }}
+          className="text-shimmer font-black tracking-tight drop-shadow-[0_0_35px_rgba(129,140,248,0.4)] whitespace-nowrap"
+        >
+          {words[index]}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  );
+};
+
+TextRotator.propTypes = {
+  words: PropTypes.arrayOf(PropTypes.string),
+  duration: PropTypes.number,
+};
+
+export default TextRotator;
