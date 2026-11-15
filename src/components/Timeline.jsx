@@ -27,11 +27,11 @@ export const Timeline = ({ data }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 70%", "end 50%"],
+    offset: ["start 60%", "end 75%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
+  const heightTransform = useTransform(scrollYProgress, [0, 0.65], [0, height], { clamp: true });
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.02], [0, 1]);
 
   return (
     <div className="c-space section-spacing" ref={containerRef}>
@@ -70,14 +70,14 @@ export const Timeline = ({ data }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute left-1 md:left-1 top-0 overflow-hidden w-[2px] bg-gradient-to-b from-transparent via-neutral-700/80 to-transparent [mask-image:linear-gradient(to_bottom,transparent_0%,black_3%,black_97%,transparent_100%)]"
+          className="absolute left-1 md:left-1 top-0 overflow-hidden w-[2px] bg-gradient-to-b from-transparent via-neutral-700/60 to-transparent"
         >
           <motion.div
             style={{
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-b from-purple-500 via-lavender to-transparent rounded-full shadow-[0_0_12px_rgba(168,85,247,0.9)]"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-b from-purple-500 via-purple-400 to-indigo-300 rounded-full shadow-[0_0_12px_rgba(168,85,247,0.9)]"
           />
         </div>
       </div>
