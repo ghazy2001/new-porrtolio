@@ -45,7 +45,7 @@ export const myProjects = [
   },
   {
     id: 17,
-    title: "CORE OPEN-SOURCE CONTRIBUTIONS (TWENTY, BETTER-AUTH, SNITCH, UMAMI)",
+    title: "CORE OPEN-SOURCE CONTRIBUTIONS",
     description:
       "25+ merged production pull requests across high-scale, venture-backed open-source repositories with 100k+ aggregate stars.",
     subDescription: [

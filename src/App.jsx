@@ -11,7 +11,7 @@ import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
   return (
-    <main className="container mx-auto max-w-7xl">
+    <main className="container mx-auto max-w-7xl w-full overflow-x-hidden">
       <LoadingScreen />
       <Navbar />
       <Hero />

@@ -86,12 +86,15 @@
 }
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background: #030412;
   font-family: "Funnel Display", sans-serif;
   color: white;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
