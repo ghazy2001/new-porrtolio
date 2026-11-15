@@ -19,11 +19,11 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I&apos;m Mahmoud Ghazy</p>
             <p className="subtext">
-              I am a product-minded Frontend Engineer specializing in enterprise ERP web clients, 
-              scalable B2B SaaS, and high-performance React architectures.
+              I am a product-minded Senior Frontend &amp; Full-Stack Engineer specializing in enterprise ERP web clients, 
+              scalable B2B SaaS, and high-performance React &amp; TypeScript architectures.
             </p>
           </div>
-          <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
+          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
         {/* Grid 2 */}
         <div className="grid-default-color grid-2">
@@ -55,12 +55,12 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              style={{ rotate: "15deg", top: "8%", left: "30%" }}
               text="Zustand"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              style={{ rotate: "-15deg", top: "18%", left: "55%" }}
               text="TanStack Query"
               containerRef={grid2Container}
             />

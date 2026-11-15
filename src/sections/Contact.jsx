@@ -41,18 +41,18 @@ const Contact = () => {
           from_name: formData.name,
           to_name: "Mahmoud GhaZy",
           from_email: formData.email,
-          to_email: "mahmod.ghazy@gmail.com",
+          to_email: "mahmoudghazy2001@gmail.com",
           message: formData.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY.trim(),
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+      showAlertMessage("success", "Your message has been sent!");
     } catch (error) {
       setIsLoading(false);
       console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
+      showAlertMessage("danger", "Something went wrong!");
     }
   };
 
@@ -82,7 +82,7 @@ const Contact = () => {
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
+            <label htmlFor="name" className="field-label">
               Full Name
             </label>
             <input
@@ -98,7 +98,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
+            <label htmlFor="email" className="field-label">
               Email
             </label>
             <input
@@ -106,7 +106,7 @@ const Contact = () => {
               name="email"
               type="email"
               className="field-input field-input-focus"
-              placeholder="ex., mahmod.ghazy@gmail.com"
+              placeholder="ex., mahmoudghazy2001@gmail.com"
               autoComplete="email"
               value={formData.email}
               onChange={handleChange}
@@ -114,7 +114,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
+            <label htmlFor="message" className="field-label">
               Message
             </label>
             <textarea

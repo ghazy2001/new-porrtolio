@@ -11,7 +11,7 @@ export const myProjects = [
       "Configured reverse proxy architecture (via Vercel & Nginx) with secure credential management to resolve cross-domain session cookies and CORS restrictions.",
       "Implemented scalable state management using Zustand and interactive analytical dashboards with Recharts and Framer Motion, fully optimized for multi-language enterprise workflows.",
     ],
-    href: "https://tamayoz.crevisoft.com/",
+    href: "https://tamayoz-alpha.vercel.app/",
     image: "/assets/projects/tamayoz.png",
     tags: [
       { id: 1, name: "React 19", path: "/assets/logos/react.svg" },
@@ -34,13 +34,53 @@ export const myProjects = [
       "Optimized site performance and SEO-readiness to handle high traffic volumes while maintaining smooth, 60 FPS animations.",
       "Integrated scalable database management with MongoDB to track custom user interactions and enhance marketing capabilities.",
     ],
-    href: "https://storiasa.com/",
+    href: "https://storia-salla.vercel.app/",
     image: "/assets/projects/project14.PNG",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
       { id: 2, name: "Tailwind", path: "/assets/logos/tailwindcss.svg" },
       { id: 3, name: "Node.js", path: "/assets/logos/nodejs.png" },
       { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+    ],
+  },
+  {
+    id: 17,
+    title: "CORE OPEN-SOURCE CONTRIBUTIONS (TWENTY, BETTER-AUTH, SNITCH, UMAMI)",
+    description:
+      "25+ merged production pull requests across high-scale, venture-backed open-source repositories with 100k+ aggregate stars.",
+    subDescription: [
+      "Twenty CRM (25k+ ⭐): Prevented Gemini AI thinking signature drift across chat browsing sessions (PR #30183), fixed timeline diff truncation (PR #29198), and resolved sign-in loader deadlocks (PR #29316).",
+      "Snitch Security Agent: Engineered native wire-level TLS ClientHello parser (JA3/JA4) with Greased cipher suites and ThreatFox C2 malware feed parsers (PR #85, #86).",
+      "Better-Auth (16k+ ⭐): Preserved discoveryHeaders on same-origin JWKS endpoints in generic OAuth flows (PR #12179).",
+      "Umami Analytics (25k+ ⭐): Prevented distorted Core Web Vitals (LCP/FCP) from background tabs and resolved timezone retention cohort shifts (PR #4724, #4690).",
+      "Cap Screen Recorder (7.5k+ ⭐): Validated and hardened developer API video list pagination and fixed playback store late duration race conditions (PR #3576, #2988).",
+    ],
+    href: "https://github.com/ghazy2001",
+    image: "/assets/coding-pov.png",
+    tags: [
+      { id: 1, name: "TypeScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "React 19", path: "/assets/logos/react.svg" },
+      { id: 3, name: "OAuth/OIDC", path: "/assets/logos/zustand.svg" },
+      { id: 4, name: "PostgreSQL", path: "/assets/logos/mongodb.svg" },
+      { id: 5, name: "Security & CI", path: "/assets/logos/vitejs.svg" },
+    ],
+  },
+  {
+    id: 16,
+    title: "TREESHIFT | GIT WORKTREE ENGINE",
+    description:
+      "A blazing-fast Git worktree manager and CLI developer tool with interactive TUI, built with TypeScript.",
+    subDescription: [
+      "Engineered a high-performance developer tool that eliminates Git context-switching overhead using isolated worktrees.",
+      "Implemented auto-synchronization, branch transplanting, and interactive TUI interface in TypeScript for fluid terminal workflows.",
+      "Published as an open-source tool, gaining active developer adoption and community stars.",
+    ],
+    href: "https://github.com/ghazy2001/treeshift",
+    image: "/assets/projects/treeshift.png",
+    tags: [
+      { id: 1, name: "TypeScript", path: "/assets/logos/javascript.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.png" },
+      { id: 3, name: "Git CLI", path: "/assets/logos/vitejs.svg" },
     ],
   },
   {
@@ -61,24 +101,6 @@ export const myProjects = [
       { id: 2, name: "Express 5", path: "/assets/logos/express.svg" },
       { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
       { id: 4, name: "GSAP", path: "/assets/logos/gsap.png" },
-    ],
-  },
-  {
-    id: 16,
-    title: "TREESHIFT | GIT WORKTREE ENGINE",
-    description:
-      "A blazing-fast Git worktree manager and CLI developer tool with interactive TUI, built with TypeScript.",
-    subDescription: [
-      "Engineered a high-performance developer tool that eliminates Git context-switching overhead using isolated worktrees.",
-      "Implemented auto-synchronization, branch transplanting, and interactive TUI interface in TypeScript for fluid terminal workflows.",
-      "Published as an open-source tool, gaining active developer adoption and community stars.",
-    ],
-    href: "https://github.com/ghazy2001/treeshift",
-    image: "/assets/projects/treeshift.png",
-    tags: [
-      { id: 1, name: "TypeScript", path: "/assets/logos/javascript.svg" },
-      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.png" },
-      { id: 3, name: "Git CLI", path: "/assets/logos/vitejs.svg" },
     ],
   },
   {
@@ -196,13 +218,23 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Crevisoft",
-    job: "Frontend Engineer (Enterprise Systems)",
-    date: "2024 - Present",
+    job: "Senior Frontend Engineer (Enterprise ERP Systems)",
+    date: "March 2026 - Present",
     contents: [
       "Architected the high-performance TAMAYOZ enterprise web client for Odoo ERP using React 19, TypeScript, Vite, and Zustand.",
       "Engineered dynamic multi-view rendering engine parsing backend XML view architectures to render dynamic editable data grids, Kanban boards, and Gantt charts.",
       "Optimized enterprise data visualization, achieving sub-1.2s LCP and maintaining 60 FPS across 10,000+ record datasets with TanStack virtualization.",
       "Resolved cross-domain session cookie drops and eliminated 99% of CORS authentication errors using custom Vercel & Nginx reverse proxy routing.",
+    ],
+  },
+  {
+    title: "Freelance & Open-Source Engineering",
+    job: "Full-Stack & Frontend Engineer",
+    date: "2025 - Present",
+    contents: [
+      "Architected STORIA, a custom React/Node.js e-commerce platform with automated Salla API synchronization and real-time webhook processing.",
+      "Engineered the MN Marketing Agency full-stack web platform using React 19, Express 5, and MongoDB with 60 FPS GSAP/Lenis animations.",
+      "Shipped 25+ merged production pull requests across global open-source ecosystems including Twenty CRM, Better-Auth, Snitch, Umami, Cap, and Chatwoot.",
     ],
   },
   {
@@ -213,15 +245,6 @@ export const experiences = [
       "Directed operations and financial accounting for a large-scale manufacturing facility, managing 600K+ EGP monthly cash flow and raw material procurement.",
       "Supervised inventory pipelines, billing reconciliation, and production scheduling for commercial clients and workshops.",
       "Developed deep expertise in double-entry bookkeeping, ledger audits, and operational workflows that now inform my software architecture for ERP and FinTech applications.",
-    ],
-  },
-  {
-    title: "Kitchen Hardware & Interior Solutions",
-    job: "Founder & Business Owner",
-    date: "2024",
-    contents: [
-      "Founded and managed a commercial retail business specializing in modern kitchen fittings and dressing room hardware.",
-      "Managed vendor purchasing, inventory turnover, and direct client accounts, gaining hands-on commercial experience in B2B client relations.",
     ],
   },
 ];

@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 const HeroText = () => {
   const words = [
     "Enterprise ERP & FinTech",
+    "Core Open-Source Contributor",
     "Scalable B2B SaaS Systems",
-    "React 19 & Next.js Platforms",
-    "Odoo & Salla Integrations",
+    "React 19, Next.js & Node.js",
   ];
 
   const variants = {
@@ -24,7 +24,7 @@ const HeroText = () => {
         animate="visible"
         transition={{ delay: 0.3 }}
       >
-        Frontend Engineer <br />
+        Senior Frontend / Full-Stack <br />
         <span className="block mt-1">
           <TextRotator words={words} duration={3200} />
         </span>
@@ -39,9 +39,9 @@ const HeroText = () => {
         transition={{ delay: 0.5 }}
       >
         Engineering high-scale, accessible web clients with{" "}
-        <strong className="text-white font-semibold">React 19, TypeScript, and Next.js</strong>.
-        Specialized in complex <strong className="text-white font-semibold">Odoo JSON-RPC</strong> and{" "}
-        <strong className="text-white font-semibold">Salla e-commerce</strong> integrations, backed by a
+        <strong className="text-white font-semibold">React 19, TypeScript, Next.js, and Node.js</strong>.
+        Specialized in complex <strong className="text-white font-semibold">Odoo ERP</strong> architectures
+        and <strong className="text-white font-semibold">25+ merged open-source PRs</strong>, backed by a
         degree in <strong className="text-white font-semibold">Accounting &amp; Finance</strong> and 4 years of operational cash flow management.
       </motion.p>
 
