@@ -19,8 +19,8 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I&apos;m Mahmoud Ghazy</p>
             <p className="subtext">
-              am a passionate developer and designer dedicated to creating
-              beautiful and functional web experiences.
+              I am a product-minded Frontend Engineer specializing in enterprise ERP web clients, 
+              scalable B2B SaaS, and high-performance React architectures.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -31,37 +31,37 @@ const About = () => {
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-5xl text-gray-500">
-              CREATIVE DEVELOPER
+            <p className="flex items-end text-3xl font-bold text-gray-500 tracking-wider">
+              ENTERPRISE &amp; ERP
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
-              text="React.js"
+              text="React 19"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="UI/UX Design"
+              text="TypeScript"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="GSAP"
+              text="Odoo ERP"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Framer Motion"
+              text="Next.js"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Express.js"
+              text="Zustand"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="MongoDB"
+              text="TanStack Query"
               containerRef={grid2Container}
             />
             <Card
@@ -85,9 +85,9 @@ const About = () => {
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
           <div className="z-10 w-[50%]">
-            <p className="headtext">Time Zone</p>
+            <p className="headtext">Time Zone &amp; Remote</p>
             <p className="subtext">
-              I&apos;m based in Mars, and open to remote work worldwide
+              Based in Egypt (UTC+2) • Available for Full-Time Remote Worldwide (Gulf, Europe, US)
             </p>
           </div>
           <figure className="absolute left-[30%] top-[10%]">
@@ -106,11 +106,11 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">MERN Stack</p>
+            <p className="headText">Enterprise &amp; Financial Acumen</p>
             <p className="subtext">
-              I specialize in building full-stack applications using the MERN
-              stack, with a focus on creating interactive and visually stunning
-              web experiences through 3D animations and creative coding.
+              Combining 4 years of operational cash flow and accounting logic 
+              with modern Frontend architectures to engineer mission-critical dashboards, 
+              virtualized data tables, and bulletproof API integrations.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
