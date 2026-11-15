@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Ghazy | Senior Frontend & Full-Stack Engineer - Resume</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #334155;
+      --accent: #2563eb;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background-color: #f1f5f9;
+      line-height: 1.45;
+      font-size: 13px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-container {
+      max-width: 850px;
+      margin: 20px auto;
+      background: var(--bg);
+      padding: 36px 42px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border-radius: 6px;
+    }
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .title-role {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+      font-size: 11.5px;
+      color: var(--secondary);
+    }
+    .contact-bar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-size: 12.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+    p.summary {
+      font-size: 12px;
+      color: var(--secondary);
+      line-height: 1.55;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4px;
+      font-size: 11.5px;
+    }
+    .skill-line strong {
+      color: var(--primary);
+      min-width: 140px;
+      display: inline-block;
+    }
+    .exp-item {
+      margin-bottom: 11px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 12.5px;
+    }
+    .exp-company {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .exp-role {
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 12px;
+    }
+    .exp-date {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .exp-sub {
+      font-size: 11px;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    ul.bullet-list {
+      list-style-type: square;
+      padding-left: 16px;
+      font-size: 11.5px;
+      color: var(--secondary);
+    }
+    ul.bullet-list li {
+      margin-bottom: 3.5px;
+      line-height: 1.45;
+    }
+    ul.bullet-list li strong {
+      color: var(--primary);
+    }
+    .oss-item {
+      margin-bottom: 7px;
+      font-size: 11.5px;
+    }
+    .oss-repo {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 12px;
+    }
+    .oss-desc {
+      color: var(--secondary);
+      line-height: 1.45;
+    }
+    .oss-desc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .oss-desc a:hover {
+      text-decoration: underline;
+    }
+    .print-btn-bar {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .print-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    @media print {
+      body {
+        background: #fff;
+      }
+      .page-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 24px 28px;
+        max-width: 100%;
+      }
+      .print-btn-bar {
+        display: none;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-btn-bar">
+    <button class="print-btn" onclick="window.print()">🖨️ Print or Save as PDF (Ctrl + P)</button>
+  </div>
+
+  <div class="page-container">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>MAHMOUD GHAZY</h1>
+          <div class="title-role">Senior Frontend / Full-Stack Engineer</div>
+        </div>
+        <div style="text-align: right; font-size: 11.5px; color: var(--muted);">
+          Egypt · Available for Remote Worldwide (UTC+2)
+        </div>
+      </div>
+      <div class="contact-bar">
+        <span>📞 <a href="tel:+201003485691">+201003485691</a></span>
+        <span>✉️ <a href="mailto:mahmoudghazy2001@gmail.com">mahmoudghazy2001@gmail.com</a></span>
+        <span>🌐 <a href="https://mahmoudghazy-portfolio.vercel.app/" target="_blank">mahmoudghazy-portfolio.vercel.app</a></span>
+        <span>🐙 <a href="https://github.com/ghazy2001" target="_blank">github.com/ghazy2001</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/mahmoud-ghazy-dev/" target="_blank">linkedin.com/in/mahmoud-ghazy</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Product-minded Senior Frontend &amp; Full-Stack Engineer with a proven track record engineering high-performance enterprise ERP web clients, scalable B2B SaaS platforms, and concurrency-safe developer tooling. Bridges <strong>4 years of operational cash flow and accounting domain expertise</strong> (Bachelor of Commerce in Accounting &amp; Finance) with modern software engineering across <strong>React 19, TypeScript, Next.js, Node.js, and PostgreSQL</strong>. Active core contributor with <strong>25+ merged production pull requests</strong> across global open-source ecosystems including <strong>Twenty CRM, Better-Auth, Snitch, Umami, Cap, and Chatwoot</strong>. Recognized for shipping sub-1.2s LCP web clients, building complex JSON-RPC view parsers, and automating business workflows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-line">
+          <strong>Languages &amp; Core:</strong> TypeScript, JavaScript (ES6+), Go, Python, SQL (PostgreSQL), HTML5, CSS3, JSON
+        </div>
+        <div class="skill-line">
+          <strong>Frontend &amp; Systems:</strong> React 19, Next.js (App Router, SSR, SSG), Vite, React Three Fiber, Three.js, Core Web Vitals
+        </div>
+        <div class="skill-line">
+          <strong>State &amp; UI Architecture:</strong> TanStack Query (React Query), Zustand, Redux Toolkit, Tailwind CSS, shadcn/ui, Framer Motion, GSAP, Recharts
+        </div>
+        <div class="skill-line">
+          <strong>Backend &amp; Integrations:</strong> Node.js, Express.js, NestJS, RESTful APIs, JSON-RPC, GraphQL, Webhooks, Odoo ERP, Salla Platform
+        </div>
+        <div class="skill-line">
+          <strong>Databases &amp; Auth:</strong> PostgreSQL, MongoDB, Redis, Prisma ORM, OAuth 2.0 / OIDC, Better-Auth, JWT, Bcrypt, JA3/JA4 TLS Fingerprinting
+        </div>
+        <div class="skill-line">
+          <strong>Testing &amp; Tooling:</strong> Git, GitHub Actions, Vitest, Jest, Docker, Nginx Reverse Proxies, Vercel
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div><span class="exp-company">Crevisoft</span> — <span class="exp-role">Senior Frontend Engineer (Enterprise ERP Systems)</span></div>
+          <div class="exp-date">March 2026 – Present | Remote, Egypt</div>
+        </div>
+        <div class="exp-sub">Project: TAMAYOZ – Enterprise ERP Web Platform (Odoo Integration)</div>
+        <ul class="bullet-list">
+          <li><strong>Architected a modular enterprise SPA web client</strong> for the Odoo ERP ecosystem using React 19, TypeScript, Vite, Tailwind CSS, and Zustand, slashing initial page load times by 45% (sub-1.2s LCP) and achieving 100% WCAG 2.1 AA accessibility compliance across bilingual (Arabic/English) interfaces.</li>
+          <li><strong>Engineered a dynamic multi-view rendering engine</strong> parsing backend XML view architectures to render dynamic editable data grids, Kanban boards, Gantt charts, and Recharts analytics at 60 FPS across 10,000+ records.</li>
+          <li><strong>Decreased user task completion time by 30%</strong> by engineering interactive enterprise workflows, real-time Chatter audit logs, multi-step modal wizards, and a centralized dialog orchestrator.</li>
+          <li><strong>Eliminated 99% of CORS authentication errors</strong> and cross-domain credential drops across 1,000+ daily sessions by integrating cookie-based JSON-RPC and REST APIs configured with Vercel and Nginx reverse proxies.</li>
+          <li><strong>Reduced component re-renders by 65%</strong> across complex nested views with scalable Zustand state slices and fluid RTL/LTR responsive layouts.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div><span class="exp-company">Self-Employed / Open-Source</span> — <span class="exp-role">Full-Stack &amp; Frontend Engineer</span></div>
+          <div class="exp-date">January 2025 – Present | Remote</div>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>STORIA (Full-Stack E-Commerce Engine — Salla Integration, 2026):</strong> Architected a custom React/Node.js/MongoDB e-commerce platform with automated Salla API sync and real-time webhooks; increased checkout completion by 25%, reduced sync latency by 70%, and saved 15+ hours/week of manual operations.</li>
+          <li><strong>MN Marketing Agency (Full-Stack Platform, 2025):</strong> Built a high-performance React 19, Express 5, and MongoDB marketing platform with JWT/Bcrypt authentication, 60 FPS GSAP/Lenis animations, and &lt;0.02 CLS across 10,000+ monthly visits.</li>
+          <li><strong>TreeShift (Git Worktree Engine CLI):</strong> Built a blazing-fast Git worktree developer tool in TypeScript with an interactive TUI, eliminating branch-switching overhead; open-sourced with active developer adoption.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div><span class="exp-company">Modern Wood Manufacturing &amp; Trading</span> — <span class="exp-role">Operations &amp; Financial Accounting Manager</span></div>
+          <div class="exp-date">March 2020 – July 2024 | Egypt</div>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Directed overall operations and financial accounting</strong> for a commercial manufacturing facility for 4+ years, managing 600K+ EGP in monthly cash flow and raw material procurement.</li>
+          <li><strong>Supervised warehouse inventory, billing reconciliation, and production scheduling</strong>, managing double-entry bookkeeping and order dispatch for hundreds of commercial B2B clients.</li>
+          <li><strong>Bridged financial domain expertise into software architecture</strong>, bringing direct mastery of double-entry ledgers, billing reconciliation, tax/currency edge cases, and RBAC permissions into ERP and SaaS platforms.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <section>
+      <h2>Featured Open-Source Contributions (25+ Merged Upstream PRs)</h2>
+      
+      <div class="oss-item">
+        <div class="oss-repo">💼 Twenty CRM (Enterprise Open-Source CRM, 25k+ ⭐)</div>
+        <div class="oss-desc">
+          • <strong>AI Chat Reasoning Signature Drift Prevention:</strong> Omitted historical reasoning parts to prevent Gemini thinking signature drift in multi-turn AI interactions (<a href="https://github.com/twentyhq/twenty/pull/30183" target="_blank">PR #30183</a>).<br>
+          • <strong>Timeline Activity Field Diff Tooltip:</strong> Prevented timeline diff value hard-truncation on long field changes and enabled full-text tooltip previews (<a href="https://github.com/twentyhq/twenty/pull/29198" target="_blank">PR #29198</a> — merged by founder Charles Bochet).<br>
+          • <strong>Sign-in Infinite Loader Fix:</strong> Prevented indefinite spinner freeze during sign-in when public workspace metadata is present by deriving active query loading state (<a href="https://github.com/twentyhq/twenty/pull/29316" target="_blank">PR #29316</a>).<br>
+          • <strong>Slack Message Unfurl Inputs &amp; Mail Sanitization:</strong> Exposed schema unfurl properties and sanitized IMAP/SMTP inputs (<a href="https://github.com/twentyhq/twenty/pull/29168" target="_blank">PR #29168</a>, <a href="https://github.com/twentyhq/twenty/pull/29163" target="_blank">PR #29163</a>).
+        </div>
+      </div>
+
+      <div class="oss-item">
+        <div class="oss-repo">🛡️ Snitch (Process Firewall &amp; Security Inspection Agent)</div>
+        <div class="oss-desc">
+          • <strong>Native Passive TLS ClientHello Fingerprinting (JA3 / JA4) &amp; C2 Detection:</strong> Engineered zero-dependency wire-level ClientHello parser, RFC 8701 GREASE filtering, canonical JA3/JA4 hashing, offline C2 fingerprint database (Cobalt Strike, Sliver, Mythic), and real-time C2 alerting (<a href="https://github.com/aixisstudio/Snitch/pull/86" target="_blank">PR #86</a> — maintainer commendation: <em>"merged — this is exactly what a security DB should look like... ships real, passive C2 detection"</em>).<br>
+          • <strong>ThreatFox C2 Threat-Feed Parser:</strong> Engineered native parser for abuse.ch ThreatFox C2 indicators (CSV/JSON), IP sanitization, and scheduled threat-feed presets (<a href="https://github.com/aixisstudio/Snitch/pull/85" target="_blank">PR #85</a>).
+        </div>
+      </div>
+
+      <div class="oss-item">
+        <div class="oss-repo">🔑 Better-Auth (Modern TypeScript Authentication Engine, 16k+ ⭐)</div>
+        <div class="oss-desc">
+          • <strong>Discovery Headers Same-Origin Preservation:</strong> Preserved <code>discoveryHeaders</code> during discovery revalidation and sent them exclusively to same-origin JWKS endpoints in generic OAuth flows (<a href="https://github.com/better-auth/better-auth/pull/12179" target="_blank">PR #12179</a>).
+        </div>
+      </div>
+
+      <div class="oss-item">
+        <div class="oss-repo">📊 Umami Analytics (Privacy-Focused Web Analytics, 25k+ ⭐)</div>
+        <div class="oss-desc">
+          • <strong>Background Tab Core Web Vitals Discard:</strong> Discarded distorted LCP/FCP metrics from background tab loads per Chrome Web Vitals standards (<a href="https://github.com/umami-software/umami/pull/4724" target="_blank">PR #4724</a>).<br>
+          • <strong>Retention Cohort Timezone Shift:</strong> Resolved timezone shifts in retention cohort dates using <code>parseBackendDate</code> (<a href="https://github.com/umami-software/umami/pull/4690" target="_blank">PR #4690</a>).
+        </div>
+      </div>
+
+      <div class="oss-item">
+        <div class="oss-repo">🎥 Cap (High-Performance Screen Recorder, 7.5k+ ⭐)</div>
+        <div class="oss-desc">
+          • <strong>Developer API Pagination Hardening:</strong> Hardened API query validation against fractional/oversized parameters and negative offsets (<a href="https://github.com/CapSoftware/Cap/pull/3576" target="_blank">PR #3576</a>).<br>
+          • <strong>Playback Store Late Updates &amp; Auth Guard:</strong> Notified subscribers when late <code>fallbackDuration</code> updates the playback store (<a href="https://github.com/CapSoftware/Cap/pull/2988" target="_blank">PR #2988</a>) and integrated reactions auth guard (<a href="https://github.com/CapSoftware/Cap/pull/2977" target="_blank">PR #2977</a>).
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="exp-header">
+        <div><strong>Bachelor of Commerce (B.Com) in Accounting &amp; Finance</strong> — Tanta University, Egypt</div>
+        <div class="exp-date">Graduated 2023</div>
+      </div>
+      <p style="font-size: 11px; color: var(--muted); margin-top: 2px;">
+        Curriculum focused on financial accounting, auditing, corporate taxation, and operations research—forming the domain foundation for architecting complex ERP, billing engines, and FinTech systems.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
