@@ -105,7 +105,7 @@ const About = () => {
         </div>
         {/* Grid 5 */}
         <div className="grid-default-color grid-5 overflow-hidden">
-          <div className="z-10 w-[60%] sm:w-[50%]">
+          <div className="z-10 w-full md:w-[50%] flex flex-col justify-center h-full">
             <p className="headText">Enterprise &amp; Financial Acumen</p>
             <p className="subtext">
               Combining 4 years of operational cash flow and accounting logic 
@@ -113,7 +113,7 @@ const About = () => {
               virtualized data tables, and bulletproof API integrations.
             </p>
           </div>
-          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[35%] sm:start-[50%] scale-75 sm:scale-100 md:scale-125 overflow-hidden pointer-events-none">
+          <div className="hidden md:block absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125 overflow-hidden pointer-events-none">
             <Frameworks />
           </div>
         </div>
