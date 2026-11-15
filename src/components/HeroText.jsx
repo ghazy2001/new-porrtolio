@@ -1,6 +1,14 @@
+import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
 const HeroText = () => {
+  const words = [
+    "Enterprise ERP & FinTech",
+    "Scalable B2B SaaS Systems",
+    "React 19 & Next.js Platforms",
+    "Odoo & Salla Integrations",
+  ];
+
   const variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -10,15 +18,19 @@ const HeroText = () => {
     <div className="z-10 flex flex-col justify-center items-center text-center max-w-4xl mx-auto px-4">
       {/* Main Headline */}
       <motion.h1
-        className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.15]"
+        className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-[1.25]"
         variants={variants}
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.3 }}
       >
         Frontend Engineer <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">
-          Enterprise ERP &amp; FinTech
+        <span className="relative inline-flex justify-center items-center min-h-[1.3em]">
+          <FlipWords
+            words={words}
+            duration={2800}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 font-black drop-shadow-[0_0_40px_rgba(99,102,241,0.35)]"
+          />
         </span>
       </motion.h1>
 

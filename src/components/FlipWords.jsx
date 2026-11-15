@@ -3,11 +3,11 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import PropTypes from "prop-types";
+
 export const FlipWords = ({ words, duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {
     const word = words[words.indexOf(currentWord) + 1] || words[0];
     setCurrentWord(word);
@@ -15,10 +15,12 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
   }, [currentWord, words]);
 
   useEffect(() => {
-    if (!isAnimating)
-      setTimeout(() => {
+    if (!isAnimating) {
+      const timer = setTimeout(() => {
         startAnimation();
       }, duration);
+      return () => clearTimeout(timer);
+    }
   }, [isAnimating, duration, startAnimation]);
 
   return (
@@ -44,22 +46,21 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
         exit={{
           opacity: 0,
           y: -40,
-          x: 40,
+          x: 20,
           filter: "blur(8px)",
-          scale: 2,
+          scale: 1.15,
           position: "absolute",
         }}
-        className={twMerge("z-10 inline-block relative text-left", className)}
+        className={twMerge("z-10 inline-block relative text-center", className)}
         key={currentWord}
       >
-        {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
         {currentWord.split(" ").map((word, wordIndex) => (
           <motion.span
             key={word + wordIndex}
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
-              delay: wordIndex * 0.3,
+              delay: wordIndex * 0.15,
               duration: 0.3,
             }}
             className="inline-block whitespace-nowrap"
@@ -70,7 +71,7 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
                 initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
+                  delay: wordIndex * 0.15 + letterIndex * 0.03,
                   duration: 0.2,
                 }}
                 className="inline-block"
