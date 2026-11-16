@@ -169,27 +169,52 @@
       text-decoration: underline;
     }
     .print-btn-bar {
-      text-align: center;
-      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
     }
     .print-btn {
       background: var(--accent);
       color: #fff;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 4px;
+      border: 1px solid transparent;
+      padding: 9px 18px;
+      border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
       font-size: 13px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .print-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    .print-btn.secondary {
+      background: #374151;
+    }
+    .print-btn.download {
+      background: #059669;
+    }
+    @page {
+      size: A4;
+      margin: 8mm 10mm;
     }
     @media print {
       body {
         background: #fff;
+        font-size: 11px;
+        line-height: 1.35;
       }
       .page-container {
         box-shadow: none;
         margin: 0;
-        padding: 24px 28px;
+        padding: 0;
         max-width: 100%;
       }
       .print-btn-bar {
@@ -197,16 +222,36 @@
       }
       .page-break {
         page-break-before: always;
+        break-before: page;
       }
       a {
         text-decoration: none;
+      }
+      section {
+        margin-bottom: 8px;
+      }
+      h2 {
+        margin-bottom: 5px;
+        padding-bottom: 2px;
+      }
+      .exp-item {
+        margin-bottom: 7px;
+      }
+      .oss-item {
+        margin-bottom: 5px;
+      }
+      ul.bullet-list li {
+        margin-bottom: 2px;
+        line-height: 1.35;
       }
     }
   </style>
 </head>
 <body>
   <div class="print-btn-bar">
-    <button class="print-btn" onclick="window.print()">🖨️ Print or Save as PDF (Ctrl + P)</button>
+    <a href="/" class="print-btn secondary">← Back to Portfolio</a>
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <a href="/Mahmoud_Ghazy_Resume.pdf" download="Mahmoud_Ghazy_Resume.pdf" class="print-btn download">⬇️ Download PDF (2-Page ATS)</a>
   </div>
 
   <div class="page-container">
@@ -225,7 +270,7 @@
         <span>✉️ <a href="mailto:mahmoudghazy2001@gmail.com">mahmoudghazy2001@gmail.com</a></span>
         <span>🌐 <a href="https://mahmoudghazy-portfolio.vercel.app/" target="_blank">mahmoudghazy-portfolio.vercel.app</a></span>
         <span>🐙 <a href="https://github.com/ghazy2001" target="_blank">github.com/ghazy2001</a></span>
-        <span>💼 <a href="https://www.linkedin.com/in/mahmoud-ghazy-dev/" target="_blank">linkedin.com/in/mahmoud-ghazy</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/mahmoud-ghazy-48a19924a/" target="_blank">linkedin.com/in/mahmoud-ghazy</a></span>
       </div>
     </header>
 

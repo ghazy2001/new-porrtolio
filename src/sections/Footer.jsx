@@ -15,7 +15,17 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p>© 2026 Mahmoud GhaZy. All rights reserved.</p>
+      <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm">
+        <a href="/resume.html" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline-offset-4 hover:underline">
+          Resume (HTML)
+        </a>
+        <span>•</span>
+        <a href="/Mahmoud_Ghazy_Resume.pdf" download="Mahmoud_Ghazy_Resume.pdf" className="hover:text-white transition-colors underline-offset-4 hover:underline">
+          CV (PDF)
+        </a>
+        <span>•</span>
+        <p>© 2026 Mahmoud GhaZy. All rights reserved.</p>
+      </div>
     </section>
   );
 };
